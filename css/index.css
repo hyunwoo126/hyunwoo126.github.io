@@ -98,7 +98,7 @@ body, .content{
     /* transform: translateY(-620px); */
     /* height: 0px; */
     position: absolute;
-    top: 60%;
+    top: 50%;
     padding-left: 10px;
 }
 .intro strong{
