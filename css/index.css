@@ -87,10 +87,11 @@ body, .content{
 .bg{
     height: 590px;
     opacity: 0.44;
-    background: url(../img/yunnan-flagsit.jpg) no-repeat fixed;
+    background: url(../img/yunnan-flagsit.jpg) no-repeat;
     background-size: cover;
     /* background-size: auto 100%; */
     background-position: right 100%;
+    background-attachment: scroll;
 }
 .intro{
     color: white;
@@ -130,7 +131,11 @@ body, .content{
 @media (min-width:375px){}/* iPhone 6 portrait */
 @media (min-width:481px){}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-width:641px){}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:961px){}/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px){
+    .bg{
+        background-attachment: fixed;
+    }
+}/* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:1025px){
     .bg{ height: 800px; }
     .intro{ top: 40%; }
