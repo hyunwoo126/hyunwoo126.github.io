@@ -35,6 +35,10 @@ body, .content{
 .techList .icon{
     font-size: 60px;
 }
+.projects{
+    background-color: #e8e8e8;
+    background: linear-gradient(0deg, #e8e8e8 100px, #FFFFFF 100px);
+}
 .project{
     text-align: center;
     padding: 50px 0px;   
@@ -66,8 +70,14 @@ body, .content{
 }
 .project.concepts{
     padding: 25px 0px;
+    clip-path: polygon(0% 0%, 100% 4%, 100% 96%, 0% 100%);
     /* background-color: lightblue; */
     /* clip-path: polygon(0% 0%, 100% 4%, 100% 96%, 0% 100%); */
+}
+.project.arnold{
+    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 96%);
+    background-color: #ccffcc;
+    /* background-color: lightgrey; */
 }
 
 .center-main{
@@ -116,7 +126,7 @@ body, .content{
 }
 
 .footer{
-    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%); */
     background-color: #e8e8e8;
     padding: 60px 0px;
 }
